@@ -23,13 +23,16 @@ using namespace std;
 
 bool raceCondition(){
     char fullpath[256] = {0};
-    ssize_t length = readlink("/proc/self/exe", fullpath, sizeof(fullpath)-1);
 
+    ssize_t length = readlink("/proc/self/exe", fullpath, sizeof(fullpath)-1);
+    sleep(10);
     if (length <= 0) {
         return false;
     }
+
+    return true;
  }
- 
+
 int main(){
     raceCondition();
 }
