@@ -17,12 +17,6 @@
 
 using namespace std;
 
-int main(){
-    char value1[512] = "abcdefg ...";
-    char value2[512] = "abcdefgg ...";
-    setError(value1, value2);
-}
-
 void setError(const char *value1, const char *value2) {
    
 	char message[256];
@@ -32,3 +26,11 @@ void setError(const char *value1, const char *value2) {
 	if (value2) strncat(message + length, value2, 255 - length);
 	
 }
+
+int main(){
+    char value1[512] = "abcdefg ...";
+    char value2[512] = "abcdefgg ...";
+    setError(value1, value2);
+}
+
+
