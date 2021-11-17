@@ -9,6 +9,8 @@
 //#include "3d/CCObjLoader.h"
 #define TINYOBJ_SSCANF_BUFFER_SIZE  (4096)
 
+using namespace std;
+
 int test(){
     char value1[512] = "abcdefg ...";
     char value2[512] = "abcdefgg ...";
