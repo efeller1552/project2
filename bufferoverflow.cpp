@@ -28,8 +28,8 @@ void setError(const char *value1, const char *value2) {
 }
 
 int main(){
-    char value1[512] = "abcdefg ...";
-    char value2[512] = "abcdefgg ...";
+    const char value1[512] = "wfqqactbdtptoxxvbwqcjxbufkdkkycwwmaqmzwstnaffmylufaeyqqzgjskhwuzcgdmkwwoklxmmrkggumoelpistjerahsumqqlbxbbkpasntqpsdniwbvxzhngwbwcrgdvbhofilizovsubwbpoghjbugyjlthjrbjxrgjzuplsfrtydzacnbuytzpjlfegprklxwhrhvsqdkwyzgyiihgeytfzrcseebgyyzystzxznarvayvkudbjjbuvqkjmtzetrbnwgidmwolmubpixrzluaykcfaqjraqyilfstnzymascrkusjtclfkpoksihyipqflmexmexsbiymfnyumcntzrnopkwwshvuvdempkjdpnefvgyuvckncdbdjzwvijlclkwxssnicowpzzhcelatxcvjgyatorzhlgtmhlpzagwvbolzmmzoazhqnmiumkfoxpegfnvsdbchjklnzwceuhqfckvjjbevnftxkspiruqduqmdhvmzfsb";
+    const char value2[512] = "abcdefgg ...";
     setError(value1, value2);
 }
 
