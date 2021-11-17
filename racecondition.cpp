@@ -29,3 +29,9 @@ bool raceCondition(){
         return false;
     }
  }
+ 
+int main(){
+    raceCondition();
+}
+
+
