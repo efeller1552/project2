@@ -1,3 +1,9 @@
+#include <cstdlib>
+#include <cstring>
+#include <cassert>
+#include <cmath>
+#include <cstddef>
+
 #include <string>
 #include <vector>
 #include <map>
@@ -11,7 +17,7 @@
 
 using namespace std;
 
-int test(){
+int main(){
     char value1[512] = "abcdefg ...";
     char value2[512] = "abcdefgg ...";
     setError(value1, value2);
