@@ -19,7 +19,7 @@ using namespace std;
 
 void integerOver(string value) {
    
-	int fontSize;
+	unsigned int fontSize;
     fontSize = atoi(value.c_str());
 	
 }
