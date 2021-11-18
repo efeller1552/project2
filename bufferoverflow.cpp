@@ -17,20 +17,15 @@
 
 using namespace std;
 
-void setError(const char *value1, const char *value2) {
+void setError(void *result, const char *s, ssize_t len) {
    
-	char message[256];
-	int length;
-	strcpy(message, value1);
-	length = (int) strlen(value1);
-	if (value2) strncat(message + length, value2, 255 - length);
+	memcpy (result, s, len);
 	
 }
 
 int main(){
-    const char value1[512] = "wfqqactbdtptoxxvbwqcjxbufkdkkycwwmaqmzwstnaffmylufaeyqqzgjskhwuzcgdmkwwoklxmmrkggumoelpistjerahsumqqlbxbbkpasntqpsdniwbvxzhngwbwcrgdvbhofilizovsubwbpoghjbugyjlthjrbjxrgjzuplsfrtydzacnbuytzpjlfegprklxwhrhvsqdkwyzgyiihgeytfzrcseebgyyzystzxznarvayvkudbjjbuvqkjmtzetrbnwgidmwolmubpixrzluaykcfaqjraqyilfstnzymascrkusjtclfkpoksihyipqflmexmexsbiymfnyumcntzrnopkwwshvuvdempkjdpnefvgyuvckncdbdjzwvijlclkwxssnicowpzzhcelatxcvjgyatorzhlgtmhlpzagwvbolzmmzoazhqnmiumkfoxpegfnvsdbchjklnzwceuhqfckvjjbevnftxkspiruqduqmdhvmzfsb";
-    const char value2[512] = "abcdefgg ...";
-    setError(value1, value2);
+    char result[5];
+    setError(result, "hello there this is more than 5", 32);
 }
 
 
