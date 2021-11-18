@@ -13,15 +13,20 @@
 //#include "base/ccUtils.h"
 
 //#include "3d/CCObjLoader.h"
-#define TINYOBJ_SSCANF_BUFFER_SIZE  (4096)
+#define INT_MAX 2147483647
+#define INT_MIN -2147483648
 
 using namespace std;
 
 void integerOver(string value) {
    
-	unsigned int fontSize;
+	int fontSize;
     fontSize = atoi(value.c_str());
-	
+    if(fontSize <= INT_MAX && fontSize >= INT_MIN){
+        	printf("%d\n", fontSize);
+    }else{
+        printf("out of bounds for integer");
+    }
 }
 
 int main(){
